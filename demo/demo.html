@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Demo</title>
+
+    <link rel="stylesheet" href="../dist/dropdown-content.css">
+
+    <style>
+        p {
+            margin:0 0 15px 0;
+        }
+    </style>
+    <script>
+        function callBackFunctionName() {
+            alert("Example callback function.")
+        }
+    </script>
+</head>
+<body>
+
+    <div class="dropdown-item-wrap">
+        <button class="button dropdown" data-toggle-dropdown-content="example-dropdown">
+            Button to trigger dropdown
+        </button>
+        <div class="dropdown-content xlarge" id="example-dropdown"
+             data-dropdown-content=""
+             data-close-callback="callBackFunctionName">
+            <div class="dropdown-content-inner custom-scrollbar jsDropdownInner">
+                <p><strong>Title of dropdown</strong></p>
+                <p>Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.</p>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>Dolor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+    <script src="../dist/dropdown-content.js"></script>
+
+</body>
+</html>
